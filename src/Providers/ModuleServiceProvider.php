@@ -40,15 +40,25 @@ class ModuleServiceProvider extends ServiceProvider
             "is_core" => "yes",
             "children" => [
                 [
-                    "title" => "Api",
+                    "title" => "Requested",
                     "custom-link" => "/admin/bty-api",
+                    "icon" => "fa fa-angle-right",
+                    "is_core" => "yes"
+                ],[
+                    "title" => "Approved",
+                    "custom-link" => "/admin/bty-api/approved",
+                    "icon" => "fa fa-angle-right",
+                    "is_core" => "yes"
+                ],[
+                    "title" => "Manage",
+                    "custom-link" => "/admin/bty-api/manage",
                     "icon" => "fa fa-angle-right",
                     "is_core" => "yes"
                 ]
             ]]);
 
 
-//        Routes::registerPages('btybug.hook/bty-api');
+        Routes::registerPages('btybug.hook/api');
     }
 
 

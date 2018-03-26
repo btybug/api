@@ -1,7 +1,7 @@
 {
     "name": "btybug.hook/api",
     "type": "plugin",
-    "route": "api",
+    "route": "bty-api",
     "authors": [
         {
             "name": "terakyan",

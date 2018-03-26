@@ -1,4 +1,4 @@
 @extends('btybug::layouts.admin')
 @section('content')
-    Manage
+    Requested
 @stop
