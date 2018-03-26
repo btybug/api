@@ -56,7 +56,8 @@ class ModuleServiceProvider extends ServiceProvider
                     "is_core" => "yes"
                 ]
             ]]);
-
+        
+        \Config::set('painter.PAINTERSPATHS', array_merge(\Config::get('painter.PAINTERSPATHS'), ['app' . DS . 'Plugins' . DS . 'vendor' . DS . 'btybug.hook' . DS . 'api' . DS . 'src' . DS . 'units']));
 
         Routes::registerPages('btybug.hook/api');
     }

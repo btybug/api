@@ -1,0 +1,17 @@
+{
+  "title": "Developers API",
+  "author": "Edo",
+  "site": "http:\/\/bootydev.co.uk",
+  "version": "1.0",
+  "type": "unit",
+  "description": "Developers API unit",
+  "have_setting": 1,
+  "image": "screenshot.png",
+  "slug": "developers",
+  "folder": "developers",
+  "created_at": 1490088665,
+  "is_core": 1,
+  "place": "frontend",
+  "tags": ["front_page_content","api","oauth"],
+  "path": "app\/Plugins\/vendor\/btybug.hook\/api\/src\/units\/developers"
+}
