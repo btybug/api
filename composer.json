@@ -1,0 +1,10 @@
+{
+    "name": "btybug.hook/api",
+    "authors": [
+        {
+            "name": "terakyan",
+            "email": "edo.terakyan@gmail.com"
+        }
+    ],
+    "require": {}
+}
