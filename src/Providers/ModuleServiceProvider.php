@@ -48,7 +48,7 @@ class ModuleServiceProvider extends ServiceProvider
             ]]);
 
 
-        Routes::registerPages('btybug.hook/api');
+//        Routes::registerPages('btybug.hook/bty-api');
     }
 
 
