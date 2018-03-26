@@ -1,10 +1,20 @@
 {
     "name": "btybug.hook/api",
+    "type": "plugin",
+    "route": "api",
     "authors": [
         {
             "name": "terakyan",
             "email": "edo.terakyan@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "BtyBugHook\\Api\\": "src/"
+        },
+        "files": [
+            "src/index.php"
+        ]
+    }
 }
