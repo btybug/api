@@ -85,7 +85,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title">Create Product</h4>
                     </div>
-                    {!! Form::open(['route' => 'apps_create_product']) !!}
+                    {!! Form::open(['route' => 'bty_api_apps_create_product']) !!}
                     <div class="modal-body">
                         {!! Form::hidden('id',$selected->id) !!}
                         {!! Form::text('name',null,['class' => 'form-control','placeholder' => 'Enter Name ...']) !!}

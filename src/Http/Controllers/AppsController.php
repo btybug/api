@@ -116,6 +116,6 @@ class AppsController extends Controller
     {
         $data = $appProductRepository->findOrFail($request->get('slug'));
         $response = $appProductRepository->delete($request->get('slug'));
-        return \Response::json(['success' => true, 'url' => url(route('core_apps'))]);
+        return \Response::json(['success' => true, 'url' => url(route('bty_api_core_apps'))]);
     }
 }
