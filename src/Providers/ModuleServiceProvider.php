@@ -53,16 +53,17 @@ class ModuleServiceProvider extends ServiceProvider
             "is_core" => "yes",
             "children" => [
                 [
+                    "title" => "Products",
+                    "custom-link" => "/admin/bty-api/apps",
+                    "icon" => "fa fa-angle-right",
+                    "is_core" => "yes"
+                ],
+                [
                     "title" => "Requested",
                     "custom-link" => "/admin/bty-api",
                     "icon" => "fa fa-angle-right",
                     "is_core" => "yes"
                 ], [
-                    "title" => "Products",
-                    "custom-link" => "/admin/bty-api/apps",
-                    "icon" => "fa fa-angle-right",
-                    "is_core" => "yes"
-                ],[
                     "title" => "Approved",
                     "custom-link" => "/admin/bty-api/approved",
                     "icon" => "fa fa-angle-right",
