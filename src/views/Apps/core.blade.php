@@ -9,7 +9,7 @@
             <ul class="list-unstyled menuList" id="components-list">
                 @foreach($apps as $app)
                     <li class=" @if($selected->id== $app->id) active @endif ">
-                        <a href="{!! route('core_apps',['p'=>$app->id]) !!}"> <span
+                        <a href="{!! route('bty_api_core_apps',['p'=>$app->id]) !!}"> <span
                                     class="module_icon"></span> {!! $app->name !!}</a>
                     </li>
                 @endforeach
@@ -51,11 +51,11 @@
                                         <h2><i class="fa fa-columns" aria-hidden="true"></i></h2>
                                     </a>
                                     <div class="custom_btn">
-                                        <a data-href="{!! route('app_product_delete') !!}"
+                                        <a data-href="{!! route('bty_api_app_product_delete') !!}"
                                            data-key="{!! $product->id !!}" data-type="Product {{ $product->name }}"
                                            class="delete-button btn btn-danger"><i
                                                     class="fa fa-trash-o"></i></a>
-                                        <a href="{!! route('app_edit_product',['param'=>$product->id]) !!}"
+                                        <a href="{!! route('bty_api_app_edit_product',['param'=>$product->id]) !!}"
                                            class="btn btn-warning"><i class="fa fa-pencil"></i></a>
                                     </div>
                                 </div>
