@@ -13,9 +13,9 @@
 namespace BtyBugHook\Api\Http\Controllers;
 
 
+use Btybug\Uploads\Repository\Plugins;
 use BtyBugHook\Api\Repository\AppProductRepository;
 use BtyBugHook\Api\Repository\AppRepository;
-use BtyBugHook\Api\Repository\Plugins;
 use BtyBugHook\Api\Services\AppsService;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -45,7 +45,6 @@ class AppsController extends Controller
             $selected = $appRepository->first();
             $products = $selected->products;
         }
-
         return view('bty_api::Apps.core', compact('apps', 'selected', 'products'));
     }
 

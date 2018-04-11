@@ -32,7 +32,20 @@ class ModuleServiceProvider extends ServiceProvider
 
         $this->loadTranslationsFrom(__DIR__ . '/../storage/bty_api', 'st_hint_path');
         $this->loadViewsFrom(__DIR__ . '/../storage/bty_api', 'st_hint_path');
+        $tubs = [
+            'bty_api' => [
+                [
+                    'title' => 'Core Apps',
+                    'url' => '/admin/bty-api/apps/core-apps',
+                ],
+                [
+                    'title' => 'Extra Apps',
+                    'url' => '/admin/bty-api/apps/extra-apps',
+                ]
+            ],
+        ];
 
+        \Eventy::action('my.tab', $tubs);
         \Eventy::action('admin.menus', [
             "title" => "Api",
             "custom-link" => "#",
@@ -46,7 +59,7 @@ class ModuleServiceProvider extends ServiceProvider
                     "is_core" => "yes"
                 ], [
                     "title" => "Products",
-                    "custom-link" => "/admin/bty-api/products",
+                    "custom-link" => "/admin/bty-api/apps",
                     "icon" => "fa fa-angle-right",
                     "is_core" => "yes"
                 ],[
