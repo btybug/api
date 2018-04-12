@@ -16,3 +16,7 @@ use Illuminate\Http\Request;
     Route::get('/user', function (Request $request) {
         return Response::json(['user' => Auth::user()]);
     })->middleware('auth:api');
+    Route::get('/login', 'ApiLoginController@showLogin');
+    Route::get('/authenticated', 'OauthController@authenticated');
+    Route::get('/redirect', 'OauthController@redirect');
+    Route::post('/login', 'ApiLoginController@login');

@@ -26,6 +26,7 @@
 Route::get('/', 'IndexController@getRequested',true)->name('bty_api_requested');
 Route::get('/approved', 'IndexController@getApproved',true)->name('bty_api_approved');
 Route::get('/manage', 'IndexController@getManage',true)->name('bty_api_manage');
+Route::get('/test', 'OauthController@test');
 
 
 Route::group(['prefix' => 'apps'], function ($router) {
