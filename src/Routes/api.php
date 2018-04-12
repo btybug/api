@@ -14,5 +14,7 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/bty-api', function (Request $request) {
-    // return $request->edo();
-})->middleware('auth:api');
+    Route::get('/user', function (Request $request) {
+        return Response::json(['user' => Auth::user()->toArray()]);
+    });
+})->middleware('client');
