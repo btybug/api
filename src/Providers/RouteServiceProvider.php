@@ -84,6 +84,17 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes()
     {
-
+        Route::group([
+            'domain' => (string)env('DOMAIN'),
+        ], function ($router) {
+            Route::group([
+                'middleware' => 'web',
+                'prefix' => 'bty-api',
+                'namespace' => $this->namespace,
+            ], function ($router) {
+                //TODO fix path when done
+                require __DIR__.'/../Routes/api.php';
+            });
+        });
     }
 }
