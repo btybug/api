@@ -14,6 +14,7 @@ namespace BtyBugHook\Api\Providers;
 use Btybug\btybug\Models\Routes;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Passport\Passport;
 
 
 class ModuleServiceProvider extends ServiceProvider
@@ -44,7 +45,7 @@ class ModuleServiceProvider extends ServiceProvider
                 ]
             ],
         ];
-
+        Passport::enableImplicitGrant();
         \Eventy::action('my.tab', $tubs);
         \Eventy::action('admin.menus', [
             "title" => "Api",

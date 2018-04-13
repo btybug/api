@@ -39,4 +39,10 @@ class OauthController extends Controller
     {
         dd($request->all());
     }
+
+    public function authorized(Request $request)
+    {
+        dd($request->all());
+       echo '<script>window.close()</script>';die;
+    }
 }
