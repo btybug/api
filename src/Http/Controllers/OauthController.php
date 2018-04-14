@@ -42,7 +42,7 @@ class OauthController extends Controller
 
     public function authorized(Request $request)
     {
-        dd($request->all());
-       echo '<script>window.close()</script>';die;
+       
+        return view('bty_api::test');
     }
 }
