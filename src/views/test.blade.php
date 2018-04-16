@@ -12,11 +12,10 @@
 <body>
 <script>
     if (window.opener != null && !window.opener.closed) {
-        var txtName = window.opener.document.getElementById("qaq");
-        txtName.innerHTML = window.document.location.href;
+        window.opener.cms.callback('{!! $code !!}');
+        window.close();
     }
-    window.opener.cms.callback('{!! $code !!}');
-    window.close();
+
 </script>
 </body>
 </html>
