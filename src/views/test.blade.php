@@ -10,9 +10,10 @@
 <body>
 <script type="javascript">
     if (window.opener != null && !window.opener.closed) {
+        console.log(1);
         window.opener.cms.callback('{!! $code !!}');
-        window.close();
     }
+        window.close();
 
 </script>
 </body>
