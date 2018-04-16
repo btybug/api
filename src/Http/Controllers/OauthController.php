@@ -42,7 +42,7 @@ class OauthController extends Controller
 
     public function authorized(Request $request)
     {
-       
-        return view('bty_api::test');
+       $code=$request->code;
+        return view('bty_api::test',compact('code'));
     }
 }
