@@ -10,6 +10,7 @@
 <body>
 {{--{!! $code !!}--}}
 <script type="javascript">
+    alert(1);
     if (window.opener != null && !window.opener.closed) {
         console.log(1);
         window.opener.cms.callback('x');
