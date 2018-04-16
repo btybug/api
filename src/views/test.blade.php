@@ -15,8 +15,8 @@
         var txtName = window.opener.document.getElementById("qaq");
         txtName.innerHTML = window.document.location.href;
     }
-    console.log(window.opener.cms.callback('{!! $code !!}'));
-    window.close();
+    window.opener.cms.callback('{!! $code !!}');
+    window.opener.cms.done();
 </script>
 </body>
 </html>
