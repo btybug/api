@@ -43,6 +43,12 @@ class OauthController extends Controller
     public function authorized(Request $request)
     {
        $code=$request->code;
-        return view('bty_api::test',compact('code'));
+       echo '<script type="javascript">
+    if (window.opener != null && !window.opener.closed) {
+        window.opener.cms.callback("'.$code.'");
+    }
+        window.close();
+
+</script>';die;
     }
 }
