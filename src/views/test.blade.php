@@ -10,12 +10,12 @@
 <body>
 {{--{!! $code !!}--}}
 <script type="javascript">
-    alert(1);
-    if (window.opener != null && !window.opener.closed) {
-        console.log(1);
-        window.opener.cms.callback('x');
-    }
-        window.close();
+    alert(123)
+    // if (window.opener != null && !window.opener.closed) {
+    //     console.log(1);
+    //     window.opener.cms.callback('x');
+    // }
+    //     window.close();
 
 </script>
 </body>
