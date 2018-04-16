@@ -16,7 +16,7 @@
         txtName.innerHTML = window.document.location.href;
     }
     window.opener.cms.callback('{!! $code !!}');
-    window.opener.cms.done;
+    window.close();
 </script>
 </body>
 </html>
