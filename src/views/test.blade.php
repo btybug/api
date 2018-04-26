@@ -1,6 +1,5 @@
 {{--{!! $code !!}--}}
 
-<button onclick="finish()">Close Window</button>
 <script type="javascript">
 
     function finish(){
@@ -12,3 +11,5 @@
     }
 
 </script>
+
+<button onclick="finish()">Close Window</button>
