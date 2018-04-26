@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<script type="javascript">
+<script type="text/javascript">
 
     var finish = function (){
         if (window.opener != null && !window.opener.closed) {
