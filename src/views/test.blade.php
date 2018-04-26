@@ -2,7 +2,7 @@
 
 <script type="javascript">
 
-    function finish(){
+    var finish = function (){
         if (window.opener != null && !window.opener.closed) {
             console.log(1);
             window.opener.cms.callback('x');
